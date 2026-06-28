@@ -1,29 +1,22 @@
-# Kanban Board
+# kanban-board
 
-Drag-and-drop Kanban board for task management — organize work across customizable columns.
+Drag-and-drop Kanban board. Everything saves to localStorage.
 
 ## Features
 
-- Drag-and-drop cards between columns using the HTML5 Drag API
-- Add, edit, and delete cards and columns
-- Card priority labels (Low / Medium / High / Critical)
-- Due date per card with overdue highlighting
-- Card count per column
-- Persisted to localStorage
-- Keyboard accessible
+- Drag cards between columns using the HTML5 Drag API
+- Add, rename, and delete columns
+- Cards have title, description, priority, and due date
+- Overdue cards get a red highlight
+- Columns show card count
 
-## Stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06b6d4?style=flat&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)
-
-## Run locally
+## Run
 
 ```bash
-npm install && npm run dev
+npm install
+npm run dev
 ```
 
----
-Made by [9bzero](https://github.com/9bzero)
+## Notes
+
+State is entirely in localStorage. There is no backend. Refreshing the page preserves your board; clearing browser data wipes it. Export/import as JSON is on the todo list.
